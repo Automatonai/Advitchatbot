@@ -2,7 +2,7 @@ import torch
 from transformers import pipeline
  
 # Load model
-model_id = "<path_to_model>"
+model_id = "meta-llama/Llama-3.2-1B-Instruct"
  
 pipe = pipeline(
     "text-generation",
@@ -15,11 +15,11 @@ pipe = pipeline(
 messages = [
     {
         "role": "system",
-        "content": "You are a pirate chatbot who always responds in pirate speak!"
+        "content": "You are a professional chatbot who always responds in helpful and responsive manner!"
     }
 ]
  
-print("🏴‍☠️ Pirate Chatbot (type 'exit' to quit)\n")
+print("AdvitChatBot-llama (type 'exit' to quit)\n")
  
 while True:
     user_input = input("You: ")
