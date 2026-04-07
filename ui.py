@@ -2,9 +2,9 @@ import torch
 import streamlit as st
 from transformers import pipeline
 
-st.set_page_config(page_title="🏴‍☠️ Pirate Chatbot", layout="centered")
+st.set_page_config(page_title="AdvitChatBot-llama", layout="centered")
 
-st.title("🏴‍☠️ Pirate Chatbot")
+st.title("AdvitChatBot-llama")
 
 @st.cache_resource
 def load_model():
@@ -24,7 +24,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = [
         {
             "role": "system",
-            "content": "You are a pirate chatbot who always responds in pirate speak!"
+            "content": "You are a professional chatbot who always responds in helpful and responsive manner!"
         }
     ]
 
