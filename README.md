@@ -31,6 +31,7 @@ The bot responds in the same way as the user wants it or defined in the system_p
 
 - Docker
 - Docker Compose
+- A HuggingFace account for fetching model with finegrained access token
 
 ---
 
